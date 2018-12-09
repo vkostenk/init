@@ -1,0 +1,8 @@
+# run previous command and ip with nat will be the one
+# traceroute slash16.org
+# traceroute: Warning: slash16.org has multiple addresses; using 54.230.142.139
+# traceroute to slash16.org (54.230.142.139), 64 hops max, 52 byte packets
+# 1  10.113.254.254 (10.113.254.254)  10.303 ms  0.387 ms  0.288 ms
+# 2  192.168.0.2 (192.168.0.2)  0.436 ms  0.347 ms  0.404 ms
+# THIS ONE 3  nat (10.90.1.11)  0.267 ms  0.183 ms  0.223 ms
+# 4  64.62.224.30 (64.62.224.30)  2.091 ms  0.951 ms  0.850 ms

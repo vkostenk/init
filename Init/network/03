@@ -1,0 +1,3 @@
+networksetup -getmacaddress en1 | cut -c 19-3
+
+# Identify the MAC address of the Wi-Fi card

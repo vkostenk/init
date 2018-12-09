@@ -1,0 +1,21 @@
+# install mailutils to be able to use it
+# apt-get install mailutils
+
+# write this script here /root/cron_md5_checker
+
+md5sum /etc/crontab 
+if cat /root/crontabmd5 1>/dev/null;
+then
+	if diff /root/crontabmd5 /root/actualmd5;
+		mail -s "Changes has been made" root@localhost < /root/email.txt
+	fi
+else
+	md5sum /etc/crontab > /root/crontabmd5 #creating file
+fi
+
+# run this command to run the script daily
+
+echo "0 0	* * *	root sh /root/cron_md5_checker" >> /etc/crontab
+
+# https://rianjs.net/2013/08/send-email-from-linux-server-using-gmail-and-ubuntu-two-factor-authentication
+# https://www.binarytides.com/linux-mail-command-examples/

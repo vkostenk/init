@@ -1,0 +1,3 @@
+du -sh /var/*
+# exact size of each folder
+# in a humanly understandable way

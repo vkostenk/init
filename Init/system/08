@@ -1,0 +1,4 @@
+# On the remote server, the public key must be copied to a file
+# within the user's home directory at ~/.ssh/authorized_keys
+# But i found it in /etc/ssh/
+# there is a lot of files

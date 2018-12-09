@@ -1,0 +1,2 @@
+read FOLDER
+ls -S $FOLDER

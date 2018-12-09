@@ -1,0 +1,3 @@
+df -h
+# displays the available space left and used on the system
+# in an humanly understandable way

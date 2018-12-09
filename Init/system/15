@@ -1,0 +1,2 @@
+pkill tail
+# kills the background command’s process

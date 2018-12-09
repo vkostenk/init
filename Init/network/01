@@ -1,0 +1,3 @@
+ifconfig -l
+
+# list of the network interfaces

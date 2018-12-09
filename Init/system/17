@@ -1,0 +1,2 @@
+iptables -L
+# list of firewall rules

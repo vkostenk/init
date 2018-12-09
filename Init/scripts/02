@@ -1,0 +1,12 @@
+#!/bin/bash
+echo "0 4 * * 1 /home/vlad/skript.sh" >> /etc/crontab
+apt-get update && apt-get upgrade >> /var/log/update_script.log
+
+# crontab -e
+# 0 4 * * 1 /home/vlad/script.sh
+
+# minute (from 0 to 59)
+# hour (from 0 to 23)
+# day of month (from 1 to 31)
+# month (from 1 to 12)
+# day of week (from 0 to 6) (0=Sunday)
